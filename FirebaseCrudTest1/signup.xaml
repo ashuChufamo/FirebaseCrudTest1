@@ -1,0 +1,23 @@
+﻿<Page x:Class="FirebaseCrudTest1.signup"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirebaseCrudTest1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="signup">
+
+    <Grid>
+        
+        <Image Source="Assets/school4.png" Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0"  />
+        <TextBox Name="signupName" materialDesign:HintAssist.Hint="Username" FontSize="16"  materialDesign:HintAssist.HintOpacity="0.5"  TextElement.Foreground="#ffffff" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#505158" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Margin="0,0,0,100"/>
+
+        <TextBox Name="signupEmail" materialDesign:HintAssist.Hint="Email" FontSize="16"  materialDesign:HintAssist.HintOpacity="0.5"  TextElement.Foreground="#ffffff" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#505158" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Margin="0,0,0,0"/>
+        <PasswordBox Name="signupPassword"   materialDesign:HintAssist.Hint="Password" FontSize="16"  materialDesign:HintAssist.HintOpacity="0.5" TextElement.Foreground="#ffffff"  materialDesign:HintAssist.Foreground="#505158"  materialDesign:TextFieldAssist.UnderlineBrush="#505158" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Margin="0,100,0,0"/>
+        <Button  Content="Signin" Background="Transparent" BorderBrush="Transparent" TextElement.Foreground="#ffffff" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Sign_in" Margin="100,0,0,20"  />
+        <Button materialDesign:ButtonAssist.CornerRadius="12" BorderBrush="AliceBlue" Click="Sign_up" Background="Transparent" Content="Signup"  Width="110" VerticalAlignment="Bottom"  HorizontalAlignment="Center" Margin="0,0,0,80"/>
+        <TextBlock Text="Already registered ?" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16" TextElement.Foreground="#ffffff" Margin="0,0,100,27"/>
+    </Grid>
+</Page>

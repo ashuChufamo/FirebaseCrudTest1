@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseCrudTest1", "FirebaseCrudTest1\FirebaseCrudTest1.csproj", "{B3A73DCB-3EEB-4543-9CEB-B8090070D8EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A73DCB-3EEB-4543-9CEB-B8090070D8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A73DCB-3EEB-4543-9CEB-B8090070D8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A73DCB-3EEB-4543-9CEB-B8090070D8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A73DCB-3EEB-4543-9CEB-B8090070D8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55D8ACE2-6273-4E47-BA74-1D3D69476D88}
+	EndGlobalSection
+EndGlobal

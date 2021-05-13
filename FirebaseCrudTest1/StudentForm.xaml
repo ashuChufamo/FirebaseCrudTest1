@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="FirebaseCrudTest1.StudentForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FirebaseCrudTest1"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBox Name="Firstname" materialDesign:HintAssist.Hint="Firstname" FontSize="16" BorderThickness="4"  materialDesign:HintAssist.HintOpacity="0.9"  TextElement.Foreground="#000000" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#000000" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="40,30,0,0"/>
+        <TextBox Name="Lastname" materialDesign:HintAssist.Hint="Lastname" FontSize="16" BorderThickness="4" materialDesign:HintAssist.HintOpacity="0.9"  TextElement.Foreground="#000000" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#000000" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Margin="0,30,50,0"/>
+        <TextBox Name="Email"  materialDesign:HintAssist.Hint="Email" FontSize="16" BorderThickness="4" materialDesign:HintAssist.HintOpacity="0.9"  TextElement.Foreground="#000000" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#000000" Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="40,90,0,0"/>
+        <PasswordBox Name="Password"   materialDesign:HintAssist.Hint="Password" FontSize="16" BorderThickness="4"  materialDesign:HintAssist.HintOpacity="0.9"  TextElement.Foreground="#000000" materialDesign:TextFieldAssist.UnderlineBrush="#505158" materialDesign:TextFieldAssist.DecorationVisibility="Visible" materialDesign:HintAssist.Foreground="#000000" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Margin="0,90,50,0"/>
+        <ComboBox Name="Grade" materialDesign:HintAssist.Hint="Grade" SelectedIndex="0" FontSize="16"  BorderThickness="4" materialDesign:HintAssist.HintOpacity="0.9"  TextElement.Foreground="#000000" materialDesign:TextFieldAssist.UnderlineBrush="#505158"  materialDesign:HintAssist.Foreground="#000000"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="40,150,0,0">
+            <ComboBoxItem>9</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Section" TextElement.Foreground="#000000" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,160,330,0" FontFamily="16"/>
+        <ComboBox Name="Section"   materialDesign:ComboBoxAssist.ClassicMode="true" BorderThickness="4"  SelectedIndex="0" FontSize="16"  materialDesign:HintAssist.HintOpacity="0.9" Padding="10"  TextElement.Foreground="#000000"   materialDesign:HintAssist.Foreground="#000000" Style="{StaticResource MaterialDesignComboBox}" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="0,160,250,0">
+            <ComboBoxItem>A</ComboBoxItem>
+            
+            <ComboBoxItem>B</ComboBoxItem>
+        </ComboBox>
+        <Button Name="Browse" materialDesign:ButtonAssist.CornerRadius="16" Click="Browse_Click" FontSize="15" Content="Browse" materialDesign:HintAssist.HintOpacity="0.5"  TextElement.Foreground="#000000" materialDesign:HintAssist.Foreground="#505158"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="80" Margin="0,0,100,20" Background="Transparent" />
+        <Button Name="Upload" materialDesign:ButtonAssist.CornerRadius="16" Click="Upload_Click" FontSize="15" Content="Upload" materialDesign:HintAssist.HintOpacity="0.5"  TextElement.Foreground="#000000" materialDesign:HintAssist.Foreground="#505158"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="80" Margin="100,0,0,20" Background="Transparent" />
+
+        <Image Name="Image" Source="Assets/school4.png" Width="140" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,80"/>
+        <Button Name="Save" materialDesign:ButtonAssist.CornerRadius="16" Click="Save_Click" TextElement.Foreground="#000000" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,20,20" Content="Save" Background="Transparent"/>
+
+
+
+
+
+
+
+    </Grid>
+</UserControl>
